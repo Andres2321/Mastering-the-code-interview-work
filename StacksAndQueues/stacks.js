@@ -10,3 +10,9 @@
 
 // LIFO
     // Last In First Out
+
+// Can build with array or linked list
+
+// Build with array to implement
+
+// Build with linked list to implement
