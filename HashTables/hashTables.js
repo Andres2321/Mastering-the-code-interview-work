@@ -1,5 +1,14 @@
-                                                    // Hash Tables --- Objects
+// Hash Tables --- Objects
 
+// Pros
+    // Fast Looksups
+    // Fast inserts
+    // Flexible keys
+// Cons
+    // Unordered
+    // Slow key iteration
+
+    
 // Key value pairs
     // Can only save your key as a string   
 
