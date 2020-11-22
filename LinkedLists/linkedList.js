@@ -2,10 +2,14 @@
 // An object that includes object that point to other objects within the class
 
 // pros
-    // 
+    // Fast Insertion
+    // Fast deletion
+    // ordered
+    // Flexible size
 
 // Cons
-    // 
+    // Slow Lookup
+    // more memory
 
 // Time Complexity
     // prepend - O(1)
