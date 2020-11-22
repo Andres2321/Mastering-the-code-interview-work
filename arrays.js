@@ -1,5 +1,14 @@
 // ~~~~~ Array ~~~~~
 
+// Pros
+    // Fast lookups
+    // Fast push/pop
+    // Ordered
+// Cons
+    // Slow inserts
+    // Slow deletes
+    // Fixed size(if using static array)
+
 // PUSH
     // Adds a variable to the end of an array
     // Time complexity = O(1)
