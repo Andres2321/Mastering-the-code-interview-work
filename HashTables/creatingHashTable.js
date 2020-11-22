@@ -24,6 +24,7 @@ class HashTable {
         // will add onto the collision array
         this.data[address].push([key,value])
     }
+
     // TC = O(1)
     get(key){
         let address = this._hash(key)
@@ -36,8 +37,22 @@ class HashTable {
         }
         return null
     }
+
+    keys(){
+        const keysArray = []
+        for( let i = 0; i < this.data.length; i++){
+            if(this.data[i]) {
+                keysArray.push(this.data[i][0][0])
+            }
+        }
+        return keysArray
+    }
 }
 
 const myHashTable = new HashTable(50)
 myHashTable.set('grapes', 10000)
+myHashTable.set('orange', 30000)
+myHashTable.set('tangerine', 50000)
+myHashTable.set('apple', 20000)
 myHashTable.get('grapes')
+myHashTable.keys()
