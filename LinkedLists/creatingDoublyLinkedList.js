@@ -2,7 +2,8 @@ class LinkedList {
     constructor(value){
         this.head = {
             value: value,
-            next: null
+            next: null,
+            prev: null
         }
         this.tail = this.head
         this.length = 1
@@ -12,7 +13,8 @@ class LinkedList {
     append(value){
         const newNode = {
             value: value,
-            next: null
+            next: null,
+            prev: this.tail
         }
 
         this.tail.next = newNode
@@ -24,9 +26,12 @@ class LinkedList {
     prepend(value){
         const newNode = {
             value: value,
-            next: null
+            next: null,
+            prev: null
         }
+
         newNode.next = this.head
+        this.head.prev = newNode
         this.head = newNode
         this.length++
         return this
@@ -35,16 +40,19 @@ class LinkedList {
     insert(index, value){
         const newNode = {
             value: value,
-            next: null
+            next: null,
+            prev: null
         }
 
         // check params
         if(index >= this.length) this.append(value)
         
         let leader = this.traverseToIndex(index - 1)
-        let holdingPointer = leader.next
+        let follower = leader.next
         leader.next = newNode
-        newNode.next = holdingPointer
+        newNode.next = follower
+        newNode.prev = leader
+        follower.prev = dnewNode
         this.length++
         return this.printList()
     }
