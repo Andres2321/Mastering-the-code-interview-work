@@ -11,3 +11,20 @@
         // lookup = 0(log N)
         // insert = 0(log N)
         // delete = 0(log N)
+
+        // If we know how many levels our tree has, we can find out how many total nodes there are
+            // # of nodes = 2^h - 1
+            // log nodes = height
+
+        // good for searching and comparing
+        // All child nodes to the right of the root node must be greater than the current node
+            // Left decreases | right increases
+        // Can only have up to 2 children
+
+        // Pros
+            // Better than O(n)
+            // Ordered
+            // Flexible size
+
+        // Cons
+            // No O(1) operation
