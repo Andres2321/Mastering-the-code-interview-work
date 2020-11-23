@@ -66,7 +66,7 @@ class Node {
           currentNode = currentNode.right;
         } else if (currentNode.value === value) {
           //We have a match, get to work!
-          
+            
           //Option 1: No right child: 
           if (currentNode.right === null) {
             if (parentNode === null) {
