@@ -7,10 +7,10 @@
 
 function selectionSort(array){
     const length = array.length;
-    for (let i = 0; i < array.length; i++) {
+    for (let i = 0; i < length; i++) {
         let min = [i]
         let temp = array[i]
-        for (let j = i + 1; j < array.length; j++) {
+        for (let j = i + 1; j < length; j++) {
             if(array[j] < array[min]){
                 min = j
             }
