@@ -2,7 +2,8 @@
     // Iterate through array with 2 for loops
     // compare both values to each other
     // Will eventually find smallest number 
-
+// Time complexity - O(n^2)
+// Space complexity - O(1)
 
 function selectionSort(array){
     const length = array.length;
