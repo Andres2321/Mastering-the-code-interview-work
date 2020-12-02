@@ -1,6 +1,9 @@
 // Divide and conquer algo
 // Divides input array in two halves. calls itself for the two halves and then merges the two sorted halves
 // The merge function is used to unite the two halves.
+// STABLE = A sorting algorithm is said to be stable of two objects with equal keys appear in the same order in sorted 
+// output as they appear in the input unsorted array. A stable sort is one in which preserves the original order of the 
+// input set, where the unstable algorithm does not distinguish between two or more items.
 
 
 // Time complexity - O(nlog(n))
