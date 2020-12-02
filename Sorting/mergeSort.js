@@ -1,3 +1,13 @@
+// Divide and conquer algo
+// Divides input array in two halves. calls itself for the two halves and then merges the two sorted halves
+// The merge function is used to unite the two halves.
+
+
+// Time complexity - O(nlog(n))
+    // Time complexity is always )(nlog(n)) as merge sort always divides the array into two halves and takes linear time
+    // to merge two halves
+// Space complexity - O(n)
+
 function mergeSort(array){
     if (array.length === 1){
         return array
